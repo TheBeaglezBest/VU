@@ -1,8 +1,13 @@
-const form = document.querySelector('form');
-const input = document.querySelector('input[type="text"]');
-const iframe = document.querySelector('iframe');
+echo '<script>
+// Toggle dark theme
+function toggleDarkTheme() {
+    document.body.classList.toggle("black-theme");
+}
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  iframe.src = input.value;
+// Add event listener for theme toggle
+document.addEventListener("keyup", function(e) {
+    if (e.key === "t") {
+        toggleDarkTheme();
+    }
 });
+</script>';
