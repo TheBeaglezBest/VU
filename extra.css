@@ -8,3 +8,38 @@ echo '<style>
     background: url(http://path/to/stars.gif) repeat;
     z-index: -1;
 }
+
+#proxy-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#proxy-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Dark Theme */
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+/* Black Theme */
+body.black-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+</style>';
